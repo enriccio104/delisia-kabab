@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebabo Delissia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo Kebabo Delissia">
+        </div>
+        <h1>Kebabo Delissia</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contatto">Contatto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Il Nostro Menu</h2>
+        <div class="menu-item">
+            <img src="images/kebab_classico.jpg" alt="Kebab Classico">
+            <div class="menu-info">
+                <h3>Kebab Classico</h3>
+                <p>Carne, insalata, pomodori, cipolla, salsa a scelta</p>
+                <p class="price">€5.00</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/kebab_vegetariano.jpg" alt="Kebab Vegetariano">
+            <div class="menu-info">
+                <h3>Kebab Vegetariano</h3>
+                <p>Falafel, insalata, pomodori, cipolla, salsa a scelta</p>
+                <p class="price">€4.50</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="images/kebab_speciale.jpg" alt="Kebab Speciale">
+            <div class="menu-info">
+                <h3>Kebab Speciale</h3>
+                <p>Carne, formaggio, insalata, pomodori, cipolla, salsa speciale</p>
+                <p class="price">€6.00</p>
+            </div>
+        </div>
+        <!-- Aggiungi altri elementi del menu qui -->
+    </section>
+    
+    <section id="contatto">
+        <h2>Contattaci</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Invia</button>
+        </form>
+        <p id="formStatus"></p>
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
